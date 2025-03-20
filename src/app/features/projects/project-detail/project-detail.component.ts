@@ -90,6 +90,7 @@ export class ProjectDetailComponent implements OnInit {
             ),
           }));
           this._projectService.updateProject(this.project());
+          this.openSnackBar('Modulo eliminado correctamente');
         }
       });
   }
