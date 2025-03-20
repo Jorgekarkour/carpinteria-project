@@ -1,0 +1,32 @@
+<div mat-dialog-title>
+  <h2>{{ getTitle() }}</h2>
+</div>
+<form [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field class="full-width" appearence="outline">
+        <mat-label> Nombre del proyecto </mat-label>
+        <input matInput formControlName="projectName" type="text" />
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field class="full-width" appearence="outline">
+        <mat-label> Nombre del cliente </mat-label>
+        <input matInput formControlName="clientName" type="text" />
+      </mat-form-field>
+    </div>
+    <div mat-dialog-actions class="action">
+      <button mat-raised-button [mat-dialog-close]="false" type="button">
+        Cancelar
+      </button>
+      <button
+        [disabled]="!projectForm.valid"
+        mat-raised-button
+        color="primary"
+        type="submit"
+      >
+        Guardar
+      </button>
+    </div>
+  </div>
+</form>

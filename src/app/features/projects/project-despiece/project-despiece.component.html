@@ -1,0 +1,8 @@
+<div mat-dialog-title>Despiece total del proyecto</div>
+<mat-dialog-content>
+  <app-grid
+    [displayedColumns]="displayedColumns"
+    [data]="this.despiece()"
+    [showFilter]="false"
+  />
+</mat-dialog-content>

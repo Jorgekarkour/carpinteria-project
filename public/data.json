@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "projectName": "Cocina Moderna",
+    "clientName": "Carlos Pérez",
+    "modules": [
+      { "id": 101, "moduleType": 1, "height": 90, "width": 40, "shelfCount": 3 },
+      { "id": 102, "moduleType": 2, "height": 70, "width": 50, "hasDoors": true, "doorCount": 2 }
+    ]
+  },
+  {
+    "id": 2,
+    "projectName": "Baño Minimalista",
+    "clientName": "Ana López",
+    "modules": [
+      { "id": 103, "moduleType": 1, "height": 90, "width": 35, "shelfCount": 2 },
+      { "id": 104, "moduleType": 2, "height": 70, "width": 45, "hasDoors": false }
+    ]
+  },
+  {
+    "id": 3,
+    "projectName": "Sala de Estudio",
+    "clientName": "Juan García",
+    "modules": [
+      { "id": 105, "moduleType": 1, "height": 90, "width": 50, "shelfCount": 5 }
+    ]
+  },
+  {
+    "id": 4,
+    "projectName": "Dormitorio Principal",
+    "clientName": "María Fernández",
+    "modules": [
+      { "id": 106, "moduleType": 2, "height": 70, "width": 60, "hasDoors": true, "doorCount": 1 }
+    ]
+  },
+  {
+    "id": 5,
+    "projectName": "Oficina Industrial",
+    "clientName": "Pedro Martínez",
+    "modules": [
+      { "id": 107, "moduleType": 1, "height": 90, "width": 30, "shelfCount": 4 },
+      { "id": 108, "moduleType": 2, "height": 70, "width": 45, "hasDoors": true, "doorCount": 2 }
+    ]
+  }
+]

@@ -1,59 +1,47 @@
-# CarpinteriaProject
+# 🛠️ Carpintería - Gestión de Proyectos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+## 📌 Descripción
+Esta aplicación está diseñada para gestionar proyectos de carpintería, permitiendo la administración de módulos en cada proyecto y generando el **despiece total** de materiales necesarios. La app facilita la gestión eficiente de proyectos, asegurando un cálculo preciso del material requerido para cada módulo.
 
-## Development server
+## ✨ Características Principales
+- 📂 **Gestión de Proyectos**: Crear, editar y eliminar proyectos.
+- 📌 **Administración de Módulos**: Añadir, modificar y eliminar módulos dentro de un proyecto.
+- 📊 **Cálculo Automático del Despiece**: Generación automática del despiece total de los módulos de un proyecto.
+- 🎨 **Interfaz basada en Angular Material**: UI moderna y amigable.
+- 🔍 **Búsqueda y Filtrado**: Filtros dinámicos para encontrar proyectos y módulos rápidamente.
+- 📦 **Persistencia en LocalStorage**: Almacena los proyectos localmente para no depender de un backend.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🏛️ Arquitectura del Proyecto
+- La aplicación está desarrollada con **Angular 19** utilizando **Standalone Components**, eliminando la necesidad de módulos tradicionales (`NgModule`).  
+- Se ha estructurado en diferentes capas para garantizar **mantenibilidad, escalabilidad y reutilización de código**.  
+- Se implementaron **componentes reutilizables** para mejorar la modularidad de la aplicación y evitar código duplicado.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🏗️ Tecnologías Utilizadas
+- **⚡ Angular 19** con **Standalone Components**
+- **🎨 Angular Material** para la interfaz
+- **🛠️ Signals** para gestión de estado reactivo
+- **📦 LocalStorage** para persistencia de datos
+- **🔀 Angular Router** para navegación entre vistas
+- **📝 RxJS** para manejo de eventos asíncronos
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
+## 🔹 Componentes Reutilizables
+- **`GridComponent`** 📊 → Tabla reutilizable con soporte para ordenación, paginación y filtrado.  
+- **`ToolbarComponent`** 🏠 → Barra de navegación adaptable según la ruta.
+- **`ConfirmationDialogComponent`** ⚠️ → Diálogo reutilizable para confirmar acciones (borrar, editar, etc.).  
 
-```bash
-ng generate component component-name
-```
+## 🚀 Instalación y Ejecución
+- npm install
+- ng serve
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📜 Uso de la Aplicación
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- 1️⃣ Crear un Proyecto desde la lista de proyectos.
+- 2️⃣ Agregar módulos dentro de un proyecto.
+- 3️⃣ Configurar los módulos (Encimera o Estantería) y definir dimensiones.
+- 4️⃣ Ver el despiece total del proyecto automáticamente generado.
+- 5️⃣ Editar o eliminar módulos según sea necesario.
